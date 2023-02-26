@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp4", "WindowsFormsApp4.csproj", "{32E807EB-C969-4F39-B0A9-DDA47918F8C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BE477244-EB4A-45FF-833A-7CA4906538C9}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Easy School installable", "..\Easy School installable\Easy School installable.vdproj", "{1E598B0F-685B-4C9A-BBB8-587ED1290257}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32E807EB-C969-4F39-B0A9-DDA47918F8C3}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{32E807EB-C969-4F39-B0A9-DDA47918F8C3}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{32E807EB-C969-4F39-B0A9-DDA47918F8C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32E807EB-C969-4F39-B0A9-DDA47918F8C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E598B0F-685B-4C9A-BBB8-587ED1290257}.Debug|Any CPU.ActiveCfg = Debug
+		{1E598B0F-685B-4C9A-BBB8-587ED1290257}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D204A1DA-9336-4B28-8680-E570E392451E}
+	EndGlobalSection
+EndGlobal

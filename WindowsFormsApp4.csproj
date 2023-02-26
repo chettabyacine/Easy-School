@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{32E807EB-C969-4F39-B0A9-DDA47918F8C3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp4</RootNamespace>
+    <AssemblyName>WindowsFormsApp4</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ExcelDataReader, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>packages\ExcelDataReader.3.6.0\lib\net45\ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader.DataSet, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>packages\ExcelDataReader.DataSet.3.6.0\lib\net35\ExcelDataReader.DataSet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.21.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="accueil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="accueil.Designer.cs">
+      <DependentUpon>accueil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modifier_eleve.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="modifier_eleve.Designer.cs">
+      <DependentUpon>modifier_eleve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classe.cs" />
+    <Compile Include="eleves_formations.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="eleves_formations.Designer.cs">
+      <DependentUpon>eleves_formations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etudiant.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formation.cs" />
+    <Compile Include="inscription_formation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="inscription_formation.Designer.cs">
+      <DependentUpon>inscription_formation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="log.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="log.Designer.cs">
+      <DependentUpon>log.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MesClasses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MesClasses.Designer.cs">
+      <DependentUpon>MesClasses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MesFormations.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MesFormations.Designer.cs">
+      <DependentUpon>MesFormations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mes_Eleves.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mes_Eleves.Designer.cs">
+      <DependentUpon>Mes_Eleves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modifier_eleve_formation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modifier_eleve_formation.Designer.cs">
+      <DependentUpon>Modifier_eleve_formation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nouveau_Eleve.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Nouveau_Eleve.Designer.cs">
+      <DependentUpon>Nouveau_Eleve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UC_Classes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Classes.Designer.cs">
+      <DependentUpon>UC_Classes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_selectMatieres.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_selectMatieres.Designer.cs">
+      <DependentUpon>UC_selectMatieres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Variables.cs" />
+    <Compile Include="vider.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="vider.Designer.cs">
+      <DependentUpon>vider.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="accueil.resx">
+      <DependentUpon>accueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifier_eleve.resx">
+      <DependentUpon>modifier_eleve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eleves_formations.resx">
+      <DependentUpon>eleves_formations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.fr-DZ.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inscription_formation.resx">
+      <DependentUpon>inscription_formation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="log.resx">
+      <DependentUpon>log.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MesClasses.resx">
+      <DependentUpon>MesClasses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MesFormations.resx">
+      <DependentUpon>MesFormations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mes_Eleves.resx">
+      <DependentUpon>Mes_Eleves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modifier_eleve_formation.resx">
+      <DependentUpon>Modifier_eleve_formation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nouveau_Eleve.resx">
+      <DependentUpon>Nouveau_Eleve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UC_Classes.resx">
+      <DependentUpon>UC_Classes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_selectMatieres.resx">
+      <DependentUpon>UC_selectMatieres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vider.resx">
+      <DependentUpon>vider.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel1">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_20201111_002652.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign_out_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\easyschool %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-menu-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-new-26 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-student-center-24 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\training_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\language_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_bin_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\easyschool %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IMG-20201106-WA0000.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
